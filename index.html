@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .nav{
+            display: flex;
+            justify-content:space-between;
+
+        }
+        .el1{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .el2{
+            display: flex;
+            justify-content: end;
+            width: 100px;
+            height: 50px;
+        }
+        /* .x{
+            display: flex;
+            justify-content: end;
+            width: 100px;
+            height: 50px;
+        }
+        .insta{
+            display: flex;
+            justify-content: end;
+            width: 50px;
+            height: 40px;
+        }
+        .search{
+            display: flex;
+            justify-content: end;
+            width: 50px;
+            height: 40px;
+        }
+        .cart{
+            display: flex;
+            justify-content: end;
+            width: 50px;
+            height: 40px;
+
+        } */
+        .container1{
+              display:flex;
+              gap: 10px;
+        }
+        .container2{
+            display: flex;
+            gap:10px;
+        }
+        .c1{
+            background-color: aliceblue;
+            width:33%;
+            height:100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding:60px;
+        }
+        .c2{
+            width:3%;
+            height:90vh;
+        }
+        .container3{
+            display: flex;
+            gap:20px;
+            padding:30px;
+            justify-content: center;
+        }
+        .d1{
+            background-color: lightpink;
+            height:350px;
+            width: 15%;
+            padding:80px;
+        }
+        .d2{
+            background-color: rgb(174, 233, 140);
+            height:350px;
+            width: 15%;
+            padding:80px;
+        }
+        .d3{
+            background-color: rgb(124, 212, 230);
+            height:350px;
+            width: 15%;
+            padding:80px;
+        }
+        .container4{
+            display: flex;
+            gap: 100px;
+            justify-content: center;
+        }
+        .container5{
+            display: flex;
+            gap: 10px;
+            margin-top:40px;
+            padding:20px;
+            background-color: rgb(197, 202, 202);
+            height:600px;
+        }
+        .e1{
+            height: 50px;
+            width: 50%;
+            margin-left:200px;
+        }
+        .e2{
+          
+           height:80vh;
+           /* padding:100px; */
+           margin:50px;
+           margin-top: 150px;
+        }
+        .container6{
+            display: flex;
+            gap:80px;
+            padding:20px;
+            justify-content: center;
+        }
+        .f1{
+            height:350px;
+            width: 15%;
+            padding:50px;
+        }
+        .container7{
+            padding: 70px;
+            margin-left: 30px;
+        }
+        .container8{
+            display: flex;
+            justify-content: space-around;
+            margin-left: 50px;
+        }
+        .g2{
+            margin-left: 500px;
+            padding: 90px;
+            width: 50%;
+            height: 50px;
+            
+        }
+        .g1{
+            width: 50%;
+            height: 4px;
+        }
+        .container9{
+            display: flex;
+            gap:10px;
+            /* padding:10px; */
+            margin:70px;
+        }
+        .container10{
+            display: flex;
+             gap:10px;
+             /* padding:10px; */
+            margin:20px;
+        }
+        .h1{
+            width:25%;
+        }
+        #l5{
+            width: 80%;
+        }
+        .container99{
+            display: flex;
+            justify-content:  space-around;
+        }
+        .child{
+            
+            width: 35%;
+        }
+        /* @media screen and (width<576px){
+            .container2{
+                display: flex;
+            }
+            #i1{
+                font-size:40px;
+                text-align: center;
+                margin-left: 50px;
+            }
+            .container2{
+                flex-direction: column;
+            }
+            .c1{
+                width:455px;
+                height:100vh;
+                padding:50px;
+                margin-left:80px;
+            }
+            .container3{
+                flex-direction: column;
+            }
+            .d1{
+                width:50%;
+                height:50vh;
+            }
+        } */
+         /* hide checkbox */
+#toggle {
+    display: none;
+}
+
+/* hamburger icon hidden on big screens */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+/* mobile responsive dropdown */
+@media screen and (width < 576px) {
+    .ell1 {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        gap: 15px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 8px gray;
+        z-index: 999;
+    }
+
+    /* show menu when checkbox active */
+    #toggle:checked ~ .ell1 {
+        display: flex;
+    }
+
+    /* show menu icon */
+    .menu-icon {
+        display: block;
+    }
+
+    /* hide social icons when responsive */
+    .container11 {
+        display: none;
+    }
+
+    /* align nav */
+    .nav1 {
+        justify-content: space-between;
+        padding: 10px;
+    }
+}
+
+         @media screen and (width < 576px) {
+
+    .container2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .c1 {
+        width:90%;
+        height: auto;
+        padding: 25px;
+        margin: 0;
+    }
+
+    .container3 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .d1, .d2, .d3 {
+        width: 90%;
+        margin: auto;
+        height: auto;
+        padding: 40px;
+    }
+    .container4{
+        flex-direction: column;
+        width:50%;
+        margin-left:70px;
+    }
+
+    .container5 {
+        flex-direction: column;
+        height: auto;
+        padding: 100px;
+        text-align: center;
+        gap:50px;
+    }
+
+    .e1 img {
+        width: 90%;
+        margin: auto;
+    }
+
+    .container6 {
+        flex-direction: column;
+        gap:2px;
+    }
+
+    .f1 {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .container8 {
+        flex-direction: column;
+        text-align: center;
+        gap:100px;
+    }
+     #b1{
+        width:60%;
+        margin-top:100px;
+        margin-left:100px;
+     }
+    .g1 {
+        width: 100%;
+    }
+
+    .g2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container9,
+    .container10 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .h1 {
+        width: 90%;
+        text-align: center;
+    }
+
+    #l5 {
+        width: 90%;
+    }
+
+    .container99 {
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+        margin:0px;
+    }
+    #p2{
+        width:80vw;
+    }
+
+    .child {
+        width: 90%;
+    }
+}
+
+    </style>
+</head>
+<body>
+      <div class="nav">
+        <div class="el2">
+            <h3>jevelin</h3>
+        </div>
+        <div class="el1">
+            <div>Home</div>
+            <div>Shop</div>
+            <div>Decor</div>
+            <div>Plant</div>
+            <div>Light</div>
+            <div>Chair</div>
+        </div> 
+         
+        <div class="container1">
+            <i class="fa-brands fa-facebook" id="i1"></i>
+            <i class="fa-brands fa-twitter" id="i1"></i>
+            <i class="fa-brands fa-instagram" id="i1"></i>
+            <i class="fa-solid fa-magnifying-glass" id="i1"></i>
+            <i class="fa-solid fa-cart-arrow-down" id="i1"></i>
+        </div>
+        
+    </div>
+   
+    <div class="container2">
+        <div class="c1">
+            <button style="width:25%; height:30px; border-radius:20px; color:white; background-color: rgb(24, 24, 27);">New collection</button>
+            <p style="font-size:70px;">Fill your home with uniqueness</p>
+            <p style="font-size:30px;">Huge variety with modern glamour!</p>
+            <p>Explore</p>
+        </div>
+        <div class="c2"> 
+           <img src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/inside-weather-E5lK_COkD2E-unsplash-copy.jpg" alt="" id="p2"> 
+    </div>
+    </div>
+    <p style="text-align: center; font-size:20px;">! Use discount code: FIRSTIME to get <span style="color: orange;">10% off</span> your first order !</p>
+    <hr>
+     <div class="container3">
+        <div class="d1">
+            <button style="background-color: black; color: white; border-radius: 20px;">New collection</button>
+            <h1>Lights & Decor</h1>
+            <p style="margin-top:100px; margin-left: 50px;"><b>Show More</b><span>></span></p>
+        </div>
+        <div class="d2">
+            <h1>Kitchen Cutlery</h1>
+            <p style="margin-top:100px; margin-left: 50px;"><b>Show More</b><span>></span></p>
+        </div>
+        <div class="d3">
+            <button order-radstyle="background-color: black; color: white; bius: 20px;">sale</button>
+            <h1>Living Room</h1>
+            <p style="margin-top:100px; margin-left: 50px;"><b>Show More</b><span>></span></p>
+        </div>
+    </div>
+    <div class="container4">
+        <img src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/Partners6-copy.png" alt="">
+        <img src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/Partners1-copy.png" alt="">
+        <img src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/Partners4-copy.png" alt="">
+        <img src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/Partners2-copy.png" alt="">
+        <img src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/Partners3-copy.png" alt="">
+        <img src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/Partners5-copy.png" alt="">
+    </div>
+    <div class="container5">
+        <div class="e1">
+            <img src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/Ellipse-622-copy-3.png">
+        </div>
+        <div class="e2">
+            <p>Our special offer</p>
+            <h1>Featured products with amazing color variety for your home</h1>
+            <button style="background-color: black; color: white; border-radius: 20px; width: 30%; height: 40px;" >purchase</button>
+    
+        </div>
+    </div>
+    <div class="container6">
+        <div class="f1">
+            <i class="fa-regular fa-clock" style="font-size:30px;"></i>
+            <h2>24 h Shipping</h2>
+            <p style="font-size:20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo felis, consectetur id elit id.</p>
+        </div>
+        <div class="f1">
+            <i class="fa-regular fa-truck" style="font-size:30px;"></i>
+            <h2>Free Returns</h2>
+            <p style="font-size:20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo felis, consectetur id elit id.</p>
+        </div>
+        <div class="f1">
+            <i class="fa-solid fa-wallet" style="font-size:30px;"></i>
+            <h2>100% Money Back Guarantee</h2>
+            <p style="font-size:20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo felis, consectetur id elit id.</p>
+        </div>
+    </div>
+    <h1 style="text-align: center;">Ideas for inspiration</h1>
+   <div class="container7">
+        <img src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/Hue_Saturation-2.jpg" alt="" id="p2"></div>
+       
+        <div  class="container8">
+        <div class="g1">
+            <h1>Find the closest store to your location</h1>
+        <p style="color: rgb(116, 116, 119);">Quisque ut aliquam nunc, at finibus ante. Sed dignissim, nulla a fermentum egestas, odio</p>
+        </div>
+        <div class="g2">
+            <button style="background-color: black;color: white; width:30%; height:30px;" id="b1">FIND NOW </button>
+        </div>
+        </div>
+        <h1 style="text-align: center;">Great deals for great prices</h1>
+        <div class="container9">
+            <div class="h1">
+            <img src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/5559331632_2_1_1_0011_jeremy-lwanga-uUwEAW5jFLE-unsplash-660x660.jpg" alt="" id="l5">
+            <h1>Table succulent plant</h1>
+            <h1><i class="fa-solid fa-euro-sign"></i><span>5.00</span></h1>
+            </div>
+            <div class="h1">
+                <img src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/5559331632_2_1_1_0010_sincerely-media-VDPauwJ_sHo-unsplash-660x660.jpg" id="l5">
+                <h1>Metallic sidetable lamp</h1>
+            <h1><i class="fa-solid fa-euro-sign"></i><span>5.00</span></h1>
+            </div>
+            <div class="h1">
+                <img src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/5559331632_2_1_1_0009_minh-pham-Wn1gmozpNZc-unsplash-660x660.jpg" id="l5">
+                <h1>Wooden picture frame</h1>
+            <h1><i class="fa-solid fa-euro-sign"></i><span>5.00</span></h1>
+            </div>
+            <div class="h1">
+                <img src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/5559331632_2_1_1_0008_minh-pham-7pCFUybP_P8-unsplash-660x660.jpg" id="l5">
+                <h1>BedRoom Mirror</h1>
+            <h1><i class="fa-solid fa-euro-sign"></i><span>5.00</span></h1>
+            </div>
+            </div>
+           <div class="container10">
+            <div class="h1">
+                <img src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/5559331632_2_1_1_0007_christopher-burns-56tCOHi5OzA-unsplash-660x660.jpg" id="l5">
+                <h1>Minimalistic Chair</h1>
+            <h1><i class="fa-solid fa-euro-sign"></i><span>5.00</span></h1>
+            </div>
+
+            <div class="h1">
+                <img src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/5559331632_2_1_1_0006_kari-shea-3_cyj5YkhTs-unsplash-660x660.jpg" id="l5">
+                <h1>Cactus succulent plant</h1>
+            <h1><i class="fa-solid fa-euro-sign"></i><span>5.00</span></h1>
+            </div>
+            <div class="h1">
+                <img src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/5559331632_2_1_1_0005_stephanie-harvey-80xePqQVKzs-unsplash-660x660.jpg" id="l5">
+                <h1>Decorative pillow</h1>
+            <h1><i class="fa-solid fa-euro-sign"></i><span>5.00</span></h1>
+            </div>
+            <div class="h1">
+                <img src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/5559331632_2_1_1_0004_bedroom-bulb-interior-decoration-lamp-545048-660x660.jpg" id="l5">
+                <h1>Metallic table lamp</h1>
+            <h1><i class="fa-solid fa-euro-sign"></i><span>5.00</span></h1>
+            </div>
+
+        </div>
+        
+        <h1 style="text-align: center;">Join the newsletter</h1>
+        <p style="text-align: center; color: rgb(54, 96, 96);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris</p>
+        <div class="container99">
+            <div class="child"><h1>PAYMENT METHOD</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+            <button style="background-color: black; color: white;">visa</button>
+            <button style="background-color: black; color: white;">AMERICAN EXPRESS</button>
+            <button style="background-color: black; color: white;">PayPal</button>
+            <button style="background-color: black; color: white;">JCB</button>
+            <p><i class="fa-solid fa-key"></i><span>Secure online payment</span></p></div>
+
+        <div class="container91">
+            <h1>SHOPPING GUIDE</h1>
+            <p>FAQ</p>
+            <p>Shipment</p>
+            <p>Returns</p>
+            <p>Policies</p>
+            <p>Gift cards</p>
+            <p>Purchase conditions</p>
+
+        </div>
+        <div class="92">
+            <h1>COMPANY</h1>
+            <p>About us</p>
+            <p>Press</p>
+            <p>Our Team</p>
+            <p>Offices</p>
+            <p>Giveaway</p>
+            <p>Contact</p>
+        </div></div>
+        <hr>
+</body>
+</html>
